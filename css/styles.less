@@ -1,0 +1,115 @@
+@import "normalize.css";
+@import "skeleton.css";
+@import "global.less";
+
+body {
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight: 300;
+}
+p {
+	margin: 25px 0 0;
+}
+
+/* L A Y O U T */
+.l-right {text-align: right;}
+.l-left {text-align:left;}
+.l-center {text-align:center;}
+
+/* H E A D E R */
+.header {
+	position: relative;
+	text-align: center;
+	//background: #9d6591;
+	background: url("../images/skyline.png") 50% 100% #9d6591 no-repeat;
+	.background-size(1200px);
+}
+.header-img {
+	height: 300px;
+	margin-top: 60px;
+}
+.header-nav {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: #b3b3b3;
+	background: rgba(0, 0, 0, 0.3);
+	z-index: 1;
+	.box-shadow(0 0 10px rgba(0, 0, 0, 0.8));
+	overflow: hidden;
+}
+.header-nav.isSticky {
+	position: fixed;
+	bottom: auto;
+	top: 0;
+}
+.header-navList {
+	text-shadow: 0 0 4px #222;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.header-navList > li {
+	width: 100% / 6;
+	float: left;
+}
+.header-navList > li > a {
+	padding: 15px;
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	.transition(all 0.2s ease);
+}
+.header-navList > li > a.isSelected {
+	background: rgba(0, 0, 0, 0.2);
+	.box-shadow(0 0 20px rgba(255, 255, 255, 0.5));
+}
+
+/* S E C T I O N */
+.section {
+	background: #fff;
+}
+.section-heading {
+	font-size: 2em;
+	margin: 50px 0 25px;
+}
+.section p:first-child {
+	margin-top: 0;
+}
+
+/* T E X T */
+.title {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.name {
+	
+}
+
+.photo {
+	height: 300px;
+	width: 100%;
+	background: url(../images/JILL-CHETAN-WYN-WILEY-PHOTOGRAPHY_845-1024x681.jpg) no-repeat center center fixed;
+	.background-size(cover);
+	.box-shadow(inset 0 0 20px rgba(0, 0, 0, 0.5));
+}
+.photo.is2 {
+	background-image: url(../images/JILL-CHETAN-WYN-WILEY-PHOTOGRAPHY_854.jpg);
+}
+.photo.is3 {
+	background-image: url(../images/JILL-CHETAN-WYN-WILEY-PHOTOGRAPHY_885.jpg);
+}
+.photo.is4 {
+	background-image: url(../images/JILL-CHETAN-WYN-WILEY-PHOTOGRAPHY_902.jpg);
+}
+.photo.is5 {
+	background-image: url(../images/jill&chetan-21.jpg);
+}
+.photo.skyline {
+	background-image: url(../images/jill&chetan-49-short.jpg);
+}
+
+/* S K E L E T O N  O V E R R I D E S */
+.row {
+	margin: 25px 0;
+}
