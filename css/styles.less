@@ -19,11 +19,17 @@ p {
 .header {
 	position: relative;
 	text-align: center;
-	//background: #9d6591;
-	background: url("../images/skyline.png") 50% 100% #9d6591 no-repeat;
+	background-image: url("../images/skyline.png"), -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, .05) 0%, rgba(0, 0, 0, .4) 100%);
+	background-image: url("../images/skyline.png"), -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(0, 0, 0, .05)), color-stop(100%, rgba(0, 0, 0, .4)));
+	background-image: url("../images/skyline.png"), -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, .05) 0%, rgba(0, 0, 0, .4) 100%);
+	background-image: url("../images/skyline.png"), -o-radial-gradient(center, ellipse cover, rgba(0, 0, 0, .05) 0%, rgba(0, 0, 0, .4) 100%);
+	background-image: url("../images/skyline.png"), -ms-radial-gradient(center, ellipse cover, rgba(0, 0, 0, .05) 0%, rgba(0, 0, 0, .4) 100%);
+	background-image: url("../images/skyline.png"), radial-gradient(ellipse at center, rgba(0, 0, 0, .05) 0%, rgba(0, 0, 0, .4) 100%);
+	background-position: 50% 100%;
+	background-color: #9d6591;
+	background-repeat: no-repeat;
 }
 .header-img {
-	height: 300px;
 	margin-top: 60px;
 }
 .header-nav {
