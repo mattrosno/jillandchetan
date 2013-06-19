@@ -154,6 +154,68 @@ p {
 	background-image: url(../images/backgrounds/jill&chetan-95.jpg);
 }
 
+/* R E G I S T R Y */
+.container .registry-column {
+	margin: 0;
+	border-left: 10px solid #fff;
+	border-right: 10px solid #fff;
+}
+.container .registry-column.surlatable {
+	.box-shadow(inset -60px 0 0 #fff);
+}
+.container .registry-column.bedbathandbeyond {
+	text-align: center;
+	.box-shadow-2(inset 60px 0 0 #fff, inset -60px 0 0 #fff);
+}
+.container .registry-column.crateandbarrel {
+	text-align: right;
+	.box-shadow(inset 60px 0 0 #fff);
+}
+
+
+
+.registry-link {
+	display: inline-block;
+}
+.registry-link:hover,
+.registry-link:focus {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.registry-sur {
+	height: 82px;
+	width: 220px;
+	background: url(../images/registry-sprite.png);
+}
+.registry-bed {
+	height: 82px;
+	width: 220px;
+	background: url(../images/registry-sprite.png) -220px 0;
+}
+.registry-crate {
+	height: 82px;
+	width: 220px;
+	background: url(../images/registry-sprite.png) -440px 0;
+}
+
+/*media queries*/
+@media only screen and (max-width: 959px) and (min-width: 768px) {
+	.container .registry-column.surlatable {.box-shadow(none);}
+	.container .registry-column.bedbathandbeyond {.box-shadow-2(inset 24px 0 0 #fff, inset -24px 0 0 #fff);}
+	.container .registry-column.crateandbarrel {.box-shadow(none);}
+}
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+	.container .registry-column.surlatable {.box-shadow-2(inset 100px 0 0 #fff, inset -100px 0 0 #fff); text-align:center; border-bottom:25px solid #fff}
+	.container .registry-column.bedbathandbeyond {.box-shadow-2(inset 100px 0 0 #fff, inset -100px 0 0 #fff); border-bottom:25px solid #fff}
+	.container .registry-column.crateandbarrel {.box-shadow-2(inset 100px 0 0 #fff, inset -100px 0 0 #fff); text-align:center;}
+}
+@media only screen and (max-width: 479px) {
+	.container .registry-column.surlatable {.box-shadow-2(inset 40px 0 0 #fff, inset -40px 0 0 #fff); text-align:center; border-bottom:25px solid #fff}
+	.container .registry-column.bedbathandbeyond {.box-shadow-2(inset 40px 0 0 #fff, inset -40px 0 0 #fff); border-bottom:25px solid #fff}
+	.container .registry-column.crateandbarrel {.box-shadow-2(inset 40px 0 0 #fff, inset -40px 0 0 #fff); text-align:center;}
+}
+
+
 /* F O O T E R */
 .footer {
 	position: relative;
