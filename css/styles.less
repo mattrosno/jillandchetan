@@ -141,6 +141,17 @@ p {
 	.background-size(cover);
 	.box-shadow(inset 0 0 20px rgba(0, 0, 0, 0.5));
 }
+.webkit.mobile .photo {
+	/*remove fixed background and cover background sizing on mobile devices*/
+	background-attachment: scroll;
+	.background-size(none);
+}
+@media only screen and (max-width: 640px) {
+	/*phones*/
+	.webkit.mobile .photo {
+		height: 200px;
+	}
+}
 .photo.is2 {
 	background-image: url(../images/backgrounds/jill&chetan-116.jpg);
 }
@@ -180,6 +191,9 @@ p {
 .registry-link:hover,
 .registry-link:focus {
 	background: rgba(0, 0, 0, 0.5);
+}
+.webkit.mobile .registry-link {
+	background: #e63432; /*because we aren't using background-sizing:cover on mobile*/
 }
 
 .registry-sur {

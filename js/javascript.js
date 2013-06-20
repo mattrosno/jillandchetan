@@ -1,3 +1,13 @@
+// Webkit detection script
+Modernizr.addTest('webkit', function() {
+	return RegExp(" AppleWebKit/").test(navigator.userAgent);
+});
+
+// Mobile Webkit
+Modernizr.addTest('mobile', function() {
+	return RegExp(" Mobile/").test(navigator.userAgent);
+});
+
 $(function() {
 	var header = $("#nav");
 	var headerTop = header.offset().top;
