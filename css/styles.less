@@ -46,6 +46,7 @@ p {
 	position: relative;
 	z-index: 1;
 	left: 35px;
+	max-width: 100%;
 }
 .header-nav {
 	position: absolute;
@@ -74,7 +75,7 @@ p {
 	float: left;
 }
 .header-navList > li > a {
-	padding: 15px;
+	padding: 15px 0;
 	color: #fff;
 	text-decoration: none;
 	display: block;
@@ -84,13 +85,47 @@ p {
 	background: rgba(36, 37, 32, 0.5);
 	.box-shadow(0 0 10px rgba(255, 255, 255, 0.1));
 }
-
+.row.header-short {
+	display: none;
+	margin: 15px 0;
+}
+.header-homeWrap {
+	font-size: 1em;
+	float: left;
+	margin: 0;
+}
+.header-home {
+	font-weight: 300;
+	color: #fff;
+	text-decoration: none;
+}
+.header-navSelect {
+	float: right;
+}
+@media only screen and (min-width: 641px) and (max-width: 767px) {
+	.header-nav .container,
+	.header-nav .columns {
+		width: auto;
+		float: none;
+	}
+}
+@media only screen and (max-width: 640px) {
+	.header-img {
+		left: 0;
+	}
+	.header-navList {
+		display: none;
+	}
+	.row.header-short {
+		display: block;
+	}
+}
 /* S E C T I O N */
 .section {
 	background: #fff;
 }
 .section-heading {
-	font-size: 2.625em; /* 42px / 16px */
+	font-size: 42em / 16; /* 42px */
 	margin: 50px 0 25px;
 	font-family: 'Lato', sans-serif;
 	text-transform: uppercase;
@@ -115,7 +150,11 @@ p {
 .section p:first-child {
 	margin-top: 0;
 }
-
+@media only screen and (max-width: 480px) {
+	.section-heading {
+		font-size: 32em / 16; /* 32px */
+	}
+}
 .story.row {
 	padding-top: 50px;
 	margin-top: 0;
@@ -123,15 +162,22 @@ p {
 
 /* T E X T */
 .title {
-	font-weight: bold;
+	font-weight: 300;
 	text-transform: uppercase;
 	font-family: 'Lato', sans-serif;
+	font-size: 32em / 16; /* 32px */
+	color: #6d3660;
 }
 .title + p {
 	margin-top: 10px;
 }
 .name {
 	margin-top: 10px;
+}
+@media only screen and (max-width: 480px) {
+	.title {
+		font-size: 24em / 16; /* 24px */
+	}
 }
 
 .photo {
@@ -165,7 +211,38 @@ p {
 	background-image: url(../images/backgrounds/jill&chetan-95.jpg);
 }
 
+/* O U R  S T O R Y */
+@media only screen and (max-width: 767px) {
+	#story .alpha {
+		float: left;
+		width: 210px;
+	}
+	#story .title.l-right,
+	#story .name.l-right {
+		text-align: left;
+	}
+	#story .omega {
+		float: right;
+		width: 210px;
+	}
+	#story .title.l-left,
+	#story .name.l-left {
+		text-align: right;
+	}
+}
+@media only screen and (max-width: 480px) {
+	#story .alpha,
+	#story .omega {
+		width: 150px;
+	}
+}
+
 /* R E G I S T R Y */
+#registry .sixteen.columns {
+	background: #fff;
+	margin: 0;
+	padding: 0 10px;
+}
 .container .registry-column {
 	margin: 0;
 	border-left: 10px solid #fff;
@@ -253,7 +330,7 @@ p {
 	.opacity(0.5);
 }
 .footer-inner {
-	background: url(../images/skyline-footer.png) no-repeat 100% 100%;
+	background: url(../images/skyline-footer.png) no-repeat 270px 100%;
 	height: 300px;
 }
 .footer-img {
@@ -261,6 +338,22 @@ p {
 	bottom: 0;
 	left: 100px;
 	.opacity(0.3);
+}
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+	.footer-inner {
+		background-position: 133px 100%;
+	}
+	.footer-img {
+		left: 0;
+	}
+}
+@media only screen and (max-width: 479px) {
+	.footer-inner {
+		background-position: 83px 100%;
+	}
+	.footer-img {
+		left: 0;
+	}
 }
 
 /* S K E L E T O N  O V E R R I D E S */
