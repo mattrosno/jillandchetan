@@ -237,6 +237,41 @@ p {
 	}
 }
 
+/* W E D D I N G  P A R T Y */
+.party-image {
+	max-width: 100%;
+	padding: 5px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	.box-shadow(0 1px 5px rgba(0, 0, 0, 0.2));
+	margin-bottom: 25px;
+}
+.party-name {
+	font-size: 24em / 16; /* 24px */
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	font-weight: 300;
+	margin-left: -2px;
+	color: #2369a4;
+}
+.party-title {
+	font-weight: bold;
+}
+.row.isRight .four.columns {
+	float: right;
+}
+.row.isRight .party-name,
+.row.isRight .party-title,
+.row.isRight .party-desc {
+	text-align: right;
+}
+@media only screen and (max-width: 767px) {
+	.row.isRight .party-name,
+	.row.isRight .party-title,
+	.row.isRight .party-desc {
+		text-align: left;
+	}
+}
+
 /* R E G I S T R Y */
 #registry .sixteen.columns {
 	background: #fff;
