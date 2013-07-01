@@ -180,8 +180,8 @@ p {
 	}
 }
 
+/* P H O T O S */
 .photo {
-	height: 300px;
 	width: 100%;
 	background: url(../images/backgrounds/jill&chetan-90.jpg) no-repeat center center fixed;
 	.background-size(cover);
@@ -191,12 +191,6 @@ p {
 	/*remove fixed background and cover background sizing on mobile devices*/
 	background-attachment: scroll;
 	.background-size(none);
-}
-@media only screen and (max-width: 640px) {
-	/*phones*/
-	.webkit.mobile .photo {
-		height: 200px;
-	}
 }
 .photo.is2 {
 	background-image: url(../images/backgrounds/jill&chetan-116.jpg);
@@ -209,6 +203,26 @@ p {
 }
 .photo.is5 {
 	background-image: url(../images/backgrounds/jill&chetan-95.jpg);
+}
+.date {
+	color: #fff;
+	font-family: 'Alex Brush', cursive;
+	text-align: center;
+	padding: 80px 0;
+}
+.date-text {
+	font-size: 5em;
+	text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+@media only screen and (max-width: 959px) {
+	.date-text {
+		font-size: 4em;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.date-text {
+		font-size: 3em;
+	}
 }
 
 /* O U R  S T O R Y */
@@ -265,6 +279,9 @@ p {
 	text-align: right;
 }
 @media only screen and (max-width: 767px) {
+	.row .four.columns {
+		text-align: center;
+	}
 	.row.isRight .party-name,
 	.row.isRight .party-title,
 	.row.isRight .party-desc {
