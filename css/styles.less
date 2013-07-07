@@ -291,6 +291,28 @@ p {
 	}
 }
 
+/* F A M I L Y */
+.polaroid {
+	border: 1px solid #ccc;
+	.box-shadow(0 1px 5px rgba(0, 0, 0, 0.2));
+	background: #fff;
+}
+.polaroid.is1 {.transform(rotate(2deg));}
+.polaroid.is2 {.transform(rotate(-1deg));}
+.polaroid.is3 {.transform(rotate(-1deg));}
+.polaroid.is4 {.transform(rotate(1deg));}
+.polaroid.is5 {.transform(rotate(2deg));}
+.polaroid.is6 {.transform(rotate(-1deg));}
+.polaroid-image {
+	width: 100%;
+	padding: 10px;
+	.box-sizing(border-box);
+}
+.polaroid-label {
+	padding: 0 10px 10px;
+	font-size: 0.75em;
+}
+
 /* R E G I S T R Y */
 #registry .sixteen.columns {
 	background: #fff;
@@ -329,6 +351,9 @@ p {
 	.background-size(cover);
 }
 
+.registry-image {
+	vertical-align: middle;
+}
 .registry-sur {
 	height: 82px;
 	width: 220px;
