@@ -1057,7 +1057,6 @@ a {
 	text-transform: uppercase;
 	font-weight: 300;
 	margin-left: -2px;
-	margin-top: -6px;
 	color: #2369a4;
 }
 .party-title {
@@ -1128,11 +1127,6 @@ a {
 }
 
 /* R E G I S T R Y */
-#registry .sixteen.columns {
-	background: #fff;
-	margin: 0;
-	padding: 0 10px;
-}
 .container .registry-row {
 	height: auto;
 	margin: 30px 0 50px;
@@ -1197,6 +1191,11 @@ a {
 }
 
 /*media queries*/
+@media only screen and (max-width: 768px) {
+	.container .registry-column {
+		border: 0;
+	}
+}
 @media only screen and (max-width: 959px) and (min-width: 768px) {
 	.surlatable .registry-link {border-right-width:0;}
 	.bedbathandbeyond .registry-link {border-width:0 24px;}
