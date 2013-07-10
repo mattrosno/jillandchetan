@@ -10,6 +10,9 @@ body {
 p {
 	margin: 25px 0 0;
 }
+a {
+	font-weight: 400;
+}
 
 /* L A Y O U T */
 .l-right {text-align: right;}
@@ -47,6 +50,7 @@ p {
 	z-index: 1;
 	left: 35px;
 	max-width: 100%;
+	vertical-align: middle;
 }
 .header-nav {
 	position: absolute;
@@ -313,6 +317,13 @@ p {
 	font-size: 0.75em;
 }
 
+/* E V E N T S */
+.events-heading {
+	font-size: 18em / 16;
+	font-weight: bold;
+	margin-top: 25px;
+}
+
 /* L O D G I N G */
 .lodging-heading {
 	font-size: 18em / 16;
@@ -431,8 +442,10 @@ p {
 .footer-wyn {
 	color: #fff;
 	margin-top: 92px;
+	text-align: justify;
 }
-.footer-wyn a {
+.footer-wyn a,
+.footer-matt a {
 	color: #fff;
 }
 .footer-matt {
@@ -447,6 +460,7 @@ p {
 	bottom: 0;
 	left: 100px;
 	.opacity(0.3);
+	z-index: -1;
 }
 @media only screen and (max-width: 767px) and (min-width: 480px) {
 	.footer-inner {
