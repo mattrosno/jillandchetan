@@ -805,10 +805,7 @@ a {
 
 /* H E A D E R */
 .header {
-	height: 360px;
 	position: relative;
-	text-align: center;
-	overflow: hidden;
 	background-image: url("../images/skyline.png"), -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, .05) 0%, rgba(0, 0, 0, .4) 100%);
 	background-image: url("../images/skyline.png"), -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(0, 0, 0, .05)), color-stop(100%, rgba(0, 0, 0, .4)));
 	background-image: url("../images/skyline.png"), -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, .05) 0%, rgba(0, 0, 0, .4) 100%);
@@ -832,9 +829,11 @@ a {
 }
 .header-img {
 	margin-top: 60px;
+	margin-left: -200px;
 	position: relative;
 	z-index: 1;
-	left: 35px;
+	left: 50%;
+	max-width: 100%;
 	vertical-align: middle;
 }
 .header-nav {
@@ -899,9 +898,6 @@ a {
 	}
 }
 @media only screen and (max-width: 665px) {
-	.header-img {
-		left: 0;
-	}
 	.header-navList {
 		display: none;
 	}
