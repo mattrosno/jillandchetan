@@ -1142,20 +1142,14 @@ a {
 	border-left: 10px solid #fff;
 	border-right: 10px solid #fff;
 }
-.container .registry-column.surlatable {
-	.box-shadow(inset -60px 0 0 #fff);
-	behavior: url(pie/PIE.htc);
-}
+.container .registry-column.surlatable {}
 .container .registry-column.bedbathandbeyond {
 	text-align: center;
-	.box-shadow-2(inset 60px 0 0 #fff, inset -60px 0 0 #fff);
-	behavior: url(pie/PIE.htc);
 }
 .container .registry-column.crateandbarrel {
 	text-align: right;
-	.box-shadow(inset 60px 0 0 #fff);
-	behavior: url(pie/PIE.htc);
 }
+
 .registry-link {
 	display: inline-block;
 }
@@ -1166,6 +1160,21 @@ a {
 .webkit.mobile .registry-link {
 	background: url(../images/backgrounds/jill&chetan-95.jpg);
 	.background-size(cover);
+}
+.surlatable .registry-link {
+	border-width: 0 60px 0 0;
+	border-style: solid;
+	border-color: #fff;
+}
+.bedbathandbeyond .registry-link {
+	border-width: 0 60px;
+	border-style: solid;
+	border-color: #fff;
+}
+.crateandbarrel .registry-link {
+	border-width: 0 0 0 60px;
+	border-style: solid;
+	border-color: #fff;
 }
 
 .registry-image {
@@ -1189,19 +1198,19 @@ a {
 
 /*media queries*/
 @media only screen and (max-width: 959px) and (min-width: 768px) {
-	.container .registry-column.surlatable {.box-shadow(none);}
-	.container .registry-column.bedbathandbeyond {.box-shadow-2(inset 24px 0 0 #fff, inset -24px 0 0 #fff);}
-	.container .registry-column.crateandbarrel {.box-shadow(none);}
+	.surlatable .registry-link {border-right-width:0;}
+	.bedbathandbeyond .registry-link {border-width:0 24px;}
+	.crateandbarrel .registry-link {border-left-width:0;}
 }
 @media only screen and (max-width: 767px) and (min-width: 480px) {
-	.container .registry-column.surlatable {.box-shadow-2(inset 100px 0 0 #fff, inset -100px 0 0 #fff); text-align:center; border-bottom:25px solid #fff}
-	.container .registry-column.bedbathandbeyond {.box-shadow-2(inset 100px 0 0 #fff, inset -100px 0 0 #fff); border-bottom:25px solid #fff}
-	.container .registry-column.crateandbarrel {.box-shadow-2(inset 100px 0 0 #fff, inset -100px 0 0 #fff); text-align:center;}
+	.surlatable .registry-link {border-width:0 100px 25px 100px; text-align:center;}
+	.bedbathandbeyond .registry-link {border-width:0 100px 25px 100px;}
+	.crateandbarrel .registry-link {border-width:0 100px; text-align:center;}
 }
 @media only screen and (max-width: 479px) {
-	.container .registry-column.surlatable {.box-shadow-2(inset 40px 0 0 #fff, inset -40px 0 0 #fff); text-align:center; border-bottom:25px solid #fff}
-	.container .registry-column.bedbathandbeyond {.box-shadow-2(inset 40px 0 0 #fff, inset -40px 0 0 #fff); border-bottom:25px solid #fff}
-	.container .registry-column.crateandbarrel {.box-shadow-2(inset 40px 0 0 #fff, inset -40px 0 0 #fff); text-align:center;}
+	.surlatable .registry-link {border-width:0 40px 25px 40px; text-align:center;}
+	.bedbathandbeyond .registry-link {border-width:0 40px 25px 40px;}
+	.crateandbarrel .registry-link {border-width:0 40px; text-align:center;}
 }
 
 
