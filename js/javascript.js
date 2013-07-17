@@ -19,7 +19,10 @@ $(document).ready(function() {
 	$(window).scroll(function(){
 		var scrollTop = $(window).scrollTop();
 		$(".header-navList > li > a").removeClass("isSelected");
-		if (scrollTop > $("#registry").offset().top - 26) {
+		if (scrollTop > $("#rsvp").offset().top - 26) {
+			$("#navRSVP").addClass("isSelected");
+			$("#navSelect").val("#rsvp").attr("selected", true);
+		} else if (scrollTop > $("#registry").offset().top - 26) {
 			$("#navRegistry").addClass("isSelected");
 			$("#navSelect").val("#registry").attr("selected", true);
 		} else if (scrollTop > $("#lodging").offset().top - 26) {
@@ -35,7 +38,6 @@ $(document).ready(function() {
 			$("#navWeddingParty").addClass("isSelected");
 			$("#navSelect").val("#weddingParty").attr("selected", true);
 		} else if (scrollTop > $("#story").offset().top - 26) {
-			$("#navStory").addClass("isSelected");
 			$("#navSelect").val("#story").attr("selected", true);
 		}
 	});
