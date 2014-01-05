@@ -17,40 +17,41 @@ Modernizr.addTest('mobile', function() {
 // Custom styling
 $(document).ready(function() {
 	$(window).scroll(function(){
-		var scrollTop = $(window).scrollTop();
+		var scrollTop = $(window).scrollTop(),
+			navHeight = $("#nav").outerHeight();
 		$(".header-navList > li > a").removeClass("isSelected");
-		if (scrollTop > $("#rsvp").offset().top - 26) {
+		if (scrollTop > $("#rsvp").offset().top - navHeight - 26) {
 			$("#navRSVP").addClass("isSelected");
 			$("#navSelect").val("#rsvp").attr("selected", true);
-		} else if (scrollTop > $("#registry").offset().top - 26) {
+		} else if (scrollTop > $("#registry").offset().top - navHeight - 26) {
 			$("#navRegistry").addClass("isSelected");
 			$("#navSelect").val("#registry").attr("selected", true);
-		} else if (scrollTop > $("#lodging").offset().top - 26) {
+		} else if (scrollTop > $("#lodging").offset().top - navHeight - 26) {
 			$("#navLodging").addClass("isSelected");
 			$("#navSelect").val("#lodging").attr("selected", true);
-		} else if (scrollTop > $("#events").offset().top - 26) {
+		} else if (scrollTop > $("#events").offset().top - navHeight - 26) {
 			$("#navEvents").addClass("isSelected");
 			$("#navSelect").val("#events").attr("selected", true);
-		} else if (scrollTop > $("#family").offset().top - 26) {
+		} else if (scrollTop > $("#family").offset().top - navHeight - 26) {
 			$("#navFamily").addClass("isSelected");
 			$("#navSelect").val("#family").attr("selected", true);
-		} else if (scrollTop > $("#weddingParty").offset().top - 26) {
+		} else if (scrollTop > $("#weddingParty").offset().top - navHeight - 26) {
 			$("#navWeddingParty").addClass("isSelected");
 			$("#navSelect").val("#weddingParty").attr("selected", true);
-		} else if (scrollTop > $("#story").offset().top - 26) {
+		} else if (scrollTop > $("#story").offset().top - navHeight - 26) {
 			$("#navSelect").val("#story").attr("selected", true);
 		}
 	});
 	
 	$(".header-navList > li > a").click(function() {
 		$("html, body").animate({
-			scrollTop: $($(this).attr("go")).offset().top - 25,
+			scrollTop: $($(this).attr("go")).offset().top - $("#nav").outerHeight() - 25,
 			easing: "easeInCubic"
 		}, 500);
 	});
 	$("#navSelect").change(function() {
 		$("html, body").animate({
-			scrollTop: $($(this).val()).offset().top - 25,
+			scrollTop: $($(this).val()).offset().top - $("#nav").outerHeight()- 25,
 			easing: "easeInCubic"
 		}, 500);
 	});
