@@ -1,9 +1,9 @@
-[jillandchetan.com](http://jillandchetan.com)
+[jillandchetan.com](https://mattrosno.github.io/jillandchetan)
 =============================================
 
 My wedding gift: a site to celebrate my sister's engagement and marriage. Designed and built with love. -Matt
 
-The site hosting is provided by [GitHub Pages](https://github.com/mattrosno/jillandchetan/tree/gh-pages), and the RSVP form is powered by Google Drive.
+The site hosting is provided by [GitHub Pages](https://mattrosno.github.io/jillandchetan), and the RSVP form is powered by Google Drive.
 
 Images
 ------
